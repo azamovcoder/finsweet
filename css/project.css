@@ -1,0 +1,149 @@
+#project {
+  margin-bottom: 96px;
+}
+
+.project__name {
+  display: flex;
+  gap: 24px;
+}
+
+#project .section__title {
+  width: 70%;
+  padding: 32px 0px 65px 96px;
+}
+
+.project__cards {
+  gap: 24px;
+}
+
+.project__card {
+  color: #fff;
+  padding: 80px 48px 48px;
+  border-radius: 12px;
+}
+
+.project__card__1 {
+  background: url("../images/project/project-2.png") no-repeat;
+  background-size: cover;
+}
+.project__card__2 {
+  background: url("../images/project/project-1.png") no-repeat;
+  background-size: cover;
+}
+.project__card__3 {
+  background: url("../images/project/project-3.png") no-repeat;
+  background-size: cover;
+}
+
+.project__card__title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.project__card .paragraph {
+  color: #fff;
+  padding: 16px 0 64px;
+}
+
+.project__card__btn {
+  background: #fff;
+  border: transparent;
+
+}
+
+.project__card__btn:hover {
+  background:var(--greenPrimary);
+  border: transparent;
+}
+
+.btn {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.75px;
+  padding: 16px 32px 16px 32px;
+  border-radius: 4px;
+}
+
+.section__name {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18.75px;
+  letter-spacing: 2px;
+  color: var(--primaryText);
+}
+
+.section__title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57.6px;
+  color: var(--primaryText);
+}
+
+.paragraph {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--secondaryText);
+  line-height: 25.6px;
+}
+
+@media (max-width: 1000px) {
+  .project__cards {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project__card {
+    width: 48%;
+  }
+
+  .section__title {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .paragraph {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 720px) {
+  .project__card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .section__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .paragraph {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .project__name {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #project .section__title {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .project__card__title {
+    font-size: 24px;
+  }
+}

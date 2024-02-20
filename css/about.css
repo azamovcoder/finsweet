@@ -1,0 +1,157 @@
+.about {
+  padding-bottom: 60px;
+}
+.about__top {
+  gap: 90px;
+  padding: 100px 0;
+}
+
+.about__left {
+  width: calc(60% - 45px);
+}
+
+.about__left__top {
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.about__left__top__name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--primaryText);
+}
+
+.about__left__box {
+  padding-left: 94px;
+}
+
+.about__left__box__title {
+  max-width: 600px;
+  padding-bottom: 32px;
+}
+
+.about__left__box__desc {
+  max-width: 600px;
+  padding-bottom: 48px;
+}
+
+.about__btn {
+  background: var(--greenPrimary);
+  border: 1px solid var(--greenPrimary);
+  color: var(--whiteColor);
+}
+.about__btn:hover {
+  color: var(--greenPrimary);
+  border: 1px solid var(--greenPrimary);
+  background: var(--whiteColor);
+}
+
+.about__right {
+  width: calc(40% - 45px);
+}
+
+.about__right img {
+  width: 100%;
+  height: 100%;
+}
+
+.about__bottom__title {
+  font-size: 16px;
+  color: var(--primaryText);
+  line-height: 18px;
+  font-weight: 500;
+}
+.about__bottom__supportes {
+  padding-bottom: 32px;
+  gap: 10px;
+}
+
+.about__bottom__supportes .line {
+  flex-grow: 1;
+  height: 2px;
+  background: var(--borderColor);
+}
+
+.about__bottom__supportes__logos {
+  width: 100%;
+  padding-bottom: 32px;
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.about__btn {
+  width: 140px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: var(--primaryText);
+  font-weight: 500;
+  border: 1px solid var(--primaryText);
+  transition: 0.3s;
+  border: var(--greenPrimary);
+
+}
+
+.about__bottom__supportes__logos img {
+  width: calc(16.6% - 16.6px);
+}
+
+@media (max-width: 1100px) {
+  .about__bottom__supportes__logos {
+    flex-wrap: wrap;
+  }
+  .about__bottom__supportes__logos img {
+    width: calc(25% - 25px);
+  }
+}
+
+@media (max-width: 800px) {
+  .about__top {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .about__left {
+    width: 80%;
+  }
+  .about__right {
+    width: 90%;
+  }
+  .about__bottom__supportes__logos img {
+    width: calc(33.3% - 15px);
+  }
+}
+
+@media (max-width: 560px) {
+  .section__box {
+    padding-left: 0px;
+  }
+}
+
+@media (max-width: 420px) {
+  .about__btn {
+    width: 120px;
+    height: 38px;
+  }
+  .about__bottom__supportes .line {
+    width: 50%;
+  }
+  .about__bottom__title {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about__btn {
+    font-size: 12px;
+    width: 100px;
+    height: 30px;
+  }
+  .about__bottom__supportes__logos img {
+    width: calc(50% - 10px);
+  }
+}
